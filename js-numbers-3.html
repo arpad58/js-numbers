@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        'use strict';
+
+        // 3            numbers-3.html
+        // Írj egy függvényt, ami a paraméterként megadott tízes számrendszerbeli számot 
+        // átkonvertálja kettes, nyolcas, és tizenhatos számrendszerbe is! 
+        // Ezeket az értékeket pedig egy objectbe adja vissza!
+        // A property-k neve legyen: binary, octal, hexa.
+
+        //const object = {
+        //    binary: 0,
+        //    octal: 0,
+        //    hexa: 0
+        //}
+
+
+        function convNumber(number) {
+            return {
+                binary: number,
+                octal: number,
+                hexa: number,
+            }
+        };
+
+        console.log(convNumber(333))
+
+    </script>
+
+</body>
+
+</html>
