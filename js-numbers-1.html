@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        // 1        numbers-1.html
+        // Írj egy függvényt, 
+        // ami a paraméterként kapott tetszőleges darabszámú, 
+        // tetszőlegesen méretű egész számot összead, 
+        // és visszatér az összeadás végeredményével! 
+        // A paraméterként kapott értékek egyszerű number típusúak legyenek!
+        //.........................................................
+        // Amennyiben bármelyik paraméter értéke, vagy a részeredmény meghaladja a biztonságos tartomány,
+        // automatikusan konvertáljad BigIntbe, és így számoljunk tovább,
+        // és természetesen a visszatérési érték is BigInt legyen!
+
+        function sumNumbers(...numbers) {
+            let sum = 0;
+            sum = numbers.reduce((a, b) => a + b);
+            return sum;
+        }
+
+        console.log(sumNumbers(33, 17, 44, 14));
+        //   108
+
+    </script>
+</body>
+
+</html>
